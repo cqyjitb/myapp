@@ -77,7 +77,7 @@ public class DemoDataProvider {
         List<NewInfo> list = new ArrayList<>();
         list.add(new NewInfo("源码", "Android源码分析--Android系统启动")
                 .setSummary("其实Android系统的启动最主要的内容无非是init、Zygote、SystemServer这三个进程的启动，他们一起构成的铁三角是Android系统的基础。")
-                .setDetailUrl("https://juejin.im/post/5c6fc0cdf265da2dda694f05")
+                .setDetailUrl("http://report.cq-yj.com:90/webroot/decision/view/report?viewlet=YJ%252FSAP%252Fhuiluliaokureport.cpt&ref_t=design&op=write&ref_c=25953b02-58c6-4ee3-8cb2-93c41b5dd679")
                 .setImageUrl("https://user-gold-cdn.xitu.io/2019/2/22/16914891cd8a950a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"));
 
         list.add(new NewInfo("Android UI", "XUI 一个简洁而优雅的Android原生UI框架，解放你的双手")

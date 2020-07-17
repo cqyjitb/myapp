@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">TemplateAppProject</string>
+    <string name="app_name">YJREPORT</string>
+    <string name="app_name_zh">渝江数据分析</string>
     <string name="app_browser_name">通用浏览器</string>
+
+    <string name="tip_please_input_username">请输入用户名</string>
+    <string name="tip_username_error">用户名错误</string>
+    <string name="tip_please_input_password">请输入密码</string>
+    <string name="tip_password_error">用户密码错误</string>
+    <string name="title_login_register">登录/注册</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

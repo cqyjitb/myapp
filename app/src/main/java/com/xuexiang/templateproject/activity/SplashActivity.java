@@ -23,6 +23,7 @@ import com.xuexiang.templateproject.R;
 import com.xuexiang.templateproject.utils.MMKVUtils;
 import com.xuexiang.templateproject.utils.Utils;
 import com.xuexiang.xui.utils.KeyboardUtils;
+import com.xuexiang.xui.utils.StatusBarUtils;
 import com.xuexiang.xui.widget.activity.BaseSplashActivity;
 import com.xuexiang.xutil.app.ActivityUtils;
 
@@ -46,6 +47,7 @@ public class SplashActivity extends BaseSplashActivity implements CancelAdapt {
      */
     @Override
     protected void onCreateActivity() {
+        //initSplashView(R.drawable.splash1080x1882);.
         initSplashView(R.drawable.xui_config_bg_splash);
         startSplash(false);
     }
@@ -58,13 +60,13 @@ public class SplashActivity extends BaseSplashActivity implements CancelAdapt {
     protected void onSplashFinished() {
         boolean isAgree = MMKVUtils.getBoolean("key_agree_privacy", false);
         if (isAgree) {
-            ActivityUtils.startActivity(MainActivity.class);
+            ActivityUtils.startActivity(LoginActivity.class);
             finish();
         } else {
             Utils.showPrivacyDialog(this, (dialog, which) -> {
                 dialog.dismiss();
                 MMKVUtils.put("key_agree_privacy", true);
-                ActivityUtils.startActivity(MainActivity.class);
+                ActivityUtils.startActivity(LoginActivity.class);
                 finish();
             });
         }
